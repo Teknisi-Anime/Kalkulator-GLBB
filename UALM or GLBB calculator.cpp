@@ -14,8 +14,8 @@ double getValidInput(const string& prompt, double minValue) {
         cout << prompt;
         cin >> value;
         if (cin.fail() || value <= minValue) {
-            cin.clear(); // Clear the error flag
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Discard invalid input
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Input tidak valid. Silakan coba lagi." << endl;
         }
     } while (value <= minValue);
@@ -37,7 +37,7 @@ void calculateAndDisplayResults(int sudut, double kecepatanAwal, double tinggiPo
 }
 
 int main() {
-    displayCopyright(); // Menampilkan copyright
+    displayCopyright();
 
     int sudut = static_cast<int>(getValidInput("Masukkan sudut peluncuran (0-90 derajat): ", 0));
     double kecepatanAwal = getValidInput("Masukkan kecepatan awal (m/s): ", 0);
