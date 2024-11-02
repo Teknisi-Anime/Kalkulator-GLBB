@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// Copyright: teknisi-anime
 void displayCopyright() {
     cout << "Copyright: teknisi-anime" << endl;
 }
