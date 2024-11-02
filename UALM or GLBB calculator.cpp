@@ -4,7 +4,11 @@
 
 using namespace std;
 
-int main() {
+void displayCopyright()
+{
+    cout << "Copyright: teknisi-anime" << endl;
+int main() 
+{
 	const double gravitasi = 10.0;
 	int sudut;
 	double kecepatanAwal, tinggiPohon;
